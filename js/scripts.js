@@ -9,7 +9,7 @@ para el trabajo práctico de JS que se habilitará a partir del 20-5.
 */
 
     async function getPokemonDatos() {
-        var randomNumber = Math.random() * 1302;
+        var randomNumber = 150;
         var roundedNumber = Math.floor(randomNumber);
       try {
         var respueta = await fetch(`https://pokeapi.co/api/v2/pokemon/${roundedNumber}`);
