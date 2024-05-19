@@ -9,11 +9,11 @@ para el trabajo práctico de JS que se habilitará a partir del 20-5.
 */
 
     async function getPokemonDatos() {
-        const randomNumber = Math.random() * 1302;
-        const roundedNumber = Math.floor(randomNumber);
+        var randomNumber = Math.random() * 1302;
+        var roundedNumber = Math.floor(randomNumber);
       try {
-        const respueta = await fetch(`https://pokeapi.co/api/v2/pokemon/${roundedNumber}`);
-        const pokemonDatos = await respueta.json();
+        var respueta = await fetch(`https://pokeapi.co/api/v2/pokemon/${roundedNumber}`);
+        var pokemonDatos = await respueta.json();
         console.log(pokemonDatos);
 
     // con esto tenemos la imagen del pokemon
