@@ -77,3 +77,25 @@ button:hover {
 button:active {
     background-color: #f9ffa8;
 }
+
+@media (max-width: 480px) {
+    header {
+        margin-top: 5px;
+        height: 40px;
+    }
+    .cuerpo {
+        margin-top: 10px;
+    }
+    .card {
+        max-width: 120px;
+    }
+    .card > img {
+        margin-top: 10px;
+        max-width: 120px;
+    }
+    button {
+        font-size: 12px;
+        margin-top: 15px;
+        padding: 6px 12px;
+    }
+}
