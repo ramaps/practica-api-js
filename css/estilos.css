@@ -1,42 +1,43 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box; /* Corrección: era "box-sizing: 0;" */
     font-family: "Poetsen One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-header{
-    margin-top: 50px;
-    height: 100px;
+header {
+    margin-top: 20px; /* Reducido para adaptarse mejor a la pantalla */
+    height: 80px; /* Reducido para adaptarse mejor a la pantalla */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-body{
+body {
     background-color: red;
 }
 
-.cuerpo{
+.cuerpo {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 div > img {
-    width: 160px;
-    height: 260px;
+    width: 100%; /* Ajustado para ocupar todo el ancho disponible */
+    max-width: 160px; /* Limitado para no exceder el tamaño original */
+    height: auto; /* Proporcional al ancho */
 }
 
-.card{
+.card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 160px;
-    height: 260px;
+    width: 100%; /* Ajustado para ocupar todo el ancho disponible */
+    max-width: 160px; /* Limitado para no exceder el tamaño original */
+    height: auto; /* Proporcional al ancho */
     background-color: rgb(172, 221, 241);
     border: 1.5px outset black;
     border-radius: 15px;
@@ -45,30 +46,31 @@ div > img {
     box-shadow: 10px 10px 10px black;
 }
 
-.card > img{
+.card > img {
     margin-top: 20px;
-    width: 160px;
-    height: 180px;
+    width: 100%; /* Ajustado para ocupar todo el ancho disponible */
+    max-width: 160px; /* Limitado para no exceder el tamaño original */
+    height: auto; /* Proporcional al ancho */
 }
 
-p{
+p {
     margin-top: 20px;
 }
 
 button {
-    font-size: 15PX;
-    margin-top: 50px;
+    font-size: 15px; /* Corrección: era "15PX" */
+    margin-top: 20px; /* Reducido para adaptarse mejor a la pantalla */
     padding: 10px 20px;
-    background-color: #f5ed00; 
-    color: black; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
+    background-color: #f5ed00;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #08b4fd; 
+    background-color: #08b4fd;
 }
 
 button:active {
