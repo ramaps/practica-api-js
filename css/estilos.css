@@ -76,7 +76,3 @@ button:hover {
 button:active {
     background-color: #f9ffa8;
 }
-
-@media (max-width: 480px) {
-   
-}
