@@ -1,6 +1,6 @@
-/* estilos.css */
+/* estilos.css *//* estilos.css */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,70 +9,105 @@
     font-style: normal;
 }
 
-header{
-    margin-top: 50px;
-    height: 100px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-body{
+body {
     background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
 }
 
-.cuerpo{
+/* HEADER */
+header {
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-div > img {
-    width: 160px;
-    height: 260px;
+header img {
+    width: 250px;
+    max-width: 90%;
+    height: auto;
 }
 
-.card{
+/* CUERPO */
+.cuerpo {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 160px;
-    height: 260px;
+    margin-top: 40px;
     background-color: rgb(172, 221, 241);
-    border: 1.5px outset black;
+    border: 2px solid black;
     border-radius: 15px;
-    font-size: 1.2em;
-    text-align: center;
-    box-shadow: 10px 10px 10px black;
+    padding: 25px;
+    width: 300px;
+    max-width: 90%;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.7);
 }
 
-.card > img{
-    margin-top: 20px;
+/* IMAGEN POKEMON */
+#imagen img {
     width: 160px;
-    height: 180px;
+    height: 160px;
+    object-fit: contain;
+    margin-bottom: 20px;
 }
 
-p{
-    margin-top: 20px;
+/* NOMBRE POKEMON */
+#nombrePokemon {
+    font-size: 1.5em;
+    text-align: center;
+    color: black;
+    margin-bottom: 25px;
 }
 
+/* BOTÓN */
 button {
-    font-size: 15PX;
-    margin-top: 50px;
-    padding: 10px 20px;
-    background-color: #f5ed00; 
-    color: black; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s;
+    font-size: 16px;
+    padding: 12px 24px;
+    background-color: #f5ed00;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
 button:hover {
-    background-color: #08b4fd; 
+    background-color: #08b4fd;
+    transform: scale(1.05);
 }
 
 button:active {
     background-color: #f9ffa8;
+    transform: scale(0.95);
+}
+
+/* 📱 Ajustes para móviles */
+@media (max-width: 600px) {
+    header {
+        margin-top: 20px;
+    }
+
+    .cuerpo {
+        width: 90%;
+        padding: 20px;
+        margin-top: 25px;
+    }
+
+    #imagen img {
+        width: 130px;
+        height: 130px;
+    }
+
+    #nombrePokemon {
+        font-size: 1.2em;
+        margin-bottom: 20px;
+    }
+
+    button {
+        font-size: 15px;
+        padding: 10px 20px;
+    }
 }
